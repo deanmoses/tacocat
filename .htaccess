@@ -1,3 +1,7 @@
+# The retired photo galleries, Zenphoto and the apps that read from it, stay on disk for their files and database but
+# are no longer served.
+RedirectMatch 404 ^/(zenphoto|p_json|pix|p|p2|p3|sveltekit)(/|$)
+
 <IfModule mod_rewrite.c>
 	# Redirect all HTTP requests to HTTPS
 	RewriteCond %{HTTPS} !=on
